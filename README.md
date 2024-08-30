@@ -22,8 +22,10 @@ Unifi Network Application requires MongoDB 4.4 and earlier. These versions of Mo
     curl -fsSL https://www.mongodb.org/static/pgp/server-4.4.asc | sudo gpg --dearmour -o /etc/apt/trusted.gpg.d/mongodb-4.4.gpg
     echo "deb [ arch=amd64,arm64 ] https://repo.mongodb.org/apt/ubuntu focal/mongodb-org/4.4 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-4.4.list
     ```
-> [!IMPORTANT]
-> Use `focal/mongodb-org/4.4` instead of nonexistent `jammy/mongodb-org/4.4`!
+
+    > [!IMPORTANT]
+    > Use `focal/mongodb-org/4.4` instead of nonexistent `jammy/mongodb-org/4.4`!
+
 1. Add Unifi repo
     ```bash
     sudo wget -O /etc/apt/trusted.gpg.d/unifi-repo.gpg https://dl.ui.com/unifi/unifi-repo.gpg
